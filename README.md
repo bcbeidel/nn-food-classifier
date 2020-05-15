@@ -1,14 +1,9 @@
 nn-food-classifier
 ==============================
 
-Multi-class classification model implementation on [tensorflow: food-101](https://www.tensorflow.org/datasets/catalog/food101) data set.
+Multi-class classification model implementation on [food-101](https://course.fast.ai/datasets) data set from [Bossard, Lukas et al., 2014](https://www.semanticscholar.org/paper/Food-101-Mining-Discriminative-Components-with-Bossard-Guillaumin/8e3f12804882b60ad5f59aad92755c5edb34860e).  The data set is described as follows:
 
-The purpose of this project is to refresh my python skills and experiment with multiple deep-learning implementations including:
-
-- [numpy](https://numpy.org/) (i.e., from scratch)
-- [Keras](https://keras.io/)
-- [Tensorsflow](https://www.tensorflow.org/)
-- [pytorch](https://pytorch.org/)
+> 101 food categories, with 101,000 images; 250 test images and 750 training images per class. The training images were not cleaned. All images were rescaled to have a maximum side length of 512 pixels.
 
 Learning Objectives
 ------------
@@ -16,9 +11,13 @@ Learning Objectives
 By the end of this project, I will have demonstrated to myself that I am able to:
 
 - Use python to prepare an image data set for model training
-- Leverage visualization libraries in python to 
+- Leverage visualization libraries to explore model performance
 - Leverage AWS S3 to store bulk, raw and intermediate data
-- Build A Deep Neural Network in a number of frameworks for comparison including numpy, tensorflow, keras, and pytorch
+- Build A Deep Neural Network in a number of frameworks for comparison including:
+  - [numpy](https://numpy.org/) (i.e., from scratch)
+  - [Keras](https://keras.io/)
+  - [Tensorsflow](https://www.tensorflow.org/)
+  - [pytorch](https://pytorch.org/)
 
 Project Organization
 ------------
@@ -69,5 +68,19 @@ Project Organization
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
 --------
+
+Project Setup
+--------
+
+In order to download the raw data from S3, the following aws-config is expected.
+
+```
+# ~/.aws/config
+[profile nn-food-classifier]
+aws_access_key_id=FAKEKEY
+aws_secret_access_key=FAKESECRETKEY
+```
+
+Files can then be download from s3 via the MAKE command `make sync_data_from_s3`. Alternatively, the original files can be downloaded from the [fast.ai course page](https://course.fast.ai/datasets).
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
