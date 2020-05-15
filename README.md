@@ -1,7 +1,24 @@
 nn-food-classifier
 ==============================
 
-Build a multi-class classifier for food items
+Multi-class classification model implementation on [tensorflow: food-101](https://www.tensorflow.org/datasets/catalog/food101) data set.
+
+The purpose of this project is to refresh my python skills and experiment with multiple deep-learning implementations including:
+
+- [numpy](https://numpy.org/) (i.e., from scratch)
+- [Keras](https://keras.io/)
+- [Tensorsflow](https://www.tensorflow.org/)
+- [pytorch](https://pytorch.org/)
+
+Learning Objectives
+------------
+
+By the end of this project, I will have demonstrated to myself that I am able to:
+
+- Use python to prepare an image data set for model training
+- Leverage visualization libraries in python to 
+- Leverage AWS S3 to store bulk, raw and intermediate data
+- Build A Deep Neural Network in a number of frameworks for comparison including numpy, tensorflow, keras, and pytorch
 
 Project Organization
 ------------
@@ -50,7 +67,6 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
 
 --------
 
