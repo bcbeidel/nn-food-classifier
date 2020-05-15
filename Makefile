@@ -6,7 +6,7 @@
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 BUCKET = bcbeidel-nn-food-classifier
-PROFILE = default
+PROFILE = nn-food-classifier
 PROJECT_NAME = nn-food-classifier
 PYTHON_INTERPRETER = python3
 
