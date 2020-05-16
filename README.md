@@ -13,11 +13,7 @@ By the end of this project, I will have demonstrated to myself that I am able to
 - Use python to prepare an image data set for model training
 - Leverage visualization libraries to explore model performance
 - Leverage AWS S3 to store bulk, raw and intermediate data
-- Build A Deep Neural Network in a number of frameworks for comparison including:
-  - [numpy](https://numpy.org/) (i.e., from scratch)
-  - [Keras](https://keras.io/)
-  - [Tensorsflow](https://www.tensorflow.org/)
-  - [pytorch](https://pytorch.org/)
+- Build A Deep Neural Network in [keras](https://keras.io/)
 
 Project Organization
 ------------
@@ -82,5 +78,14 @@ aws_secret_access_key=FAKESECRETKEY
 ```
 
 Files can then be download from s3 via the MAKE command `make sync_data_from_s3`. Alternatively, the original files can be downloaded from the [fast.ai course page](https://course.fast.ai/datasets).
+
+--------
+
+Resources
+--------
+
+- https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+--------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>

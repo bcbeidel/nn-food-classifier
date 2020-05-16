@@ -49,6 +49,17 @@ def get_test_data():
     return X_test, Y_test, classes
 
 
+def describe_images_dimensions(X):
+
+    n_images     = X.shape[0]
+    image_width  = X.shape[1]  
+    image_height = X.shape[2]
+    n_colors     = X.shape[3]
+
+    print(f'image count: {n_images}')
+    print(f'image dimensions: {image_width}px by {image_height}px; {n_colors} colors')
+
+
 if __name__ == '__main__':
     log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     logging.basicConfig(level=logging.INFO, format=log_fmt)
